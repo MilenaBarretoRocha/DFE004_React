@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.generalContainer {
+    max-width: 90vw;
+    margin: 40px auto;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.containerCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1400px) {
+    .containerCard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .containerCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .containerCard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
